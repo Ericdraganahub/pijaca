@@ -1,0 +1,82 @@
+.par {
+  letter-spacing: .2rem;
+  font-size: 1.5rem;
+  color: $color-primary;
+  line-height: $line-height-3;
+
+  &--header {
+    color: $color-grey-light-1;
+    width: 70%;
+    font-size: 2rem;
+
+    @media only screen and (max-width:$bp-3){
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width:$bp-4){
+      text-shadow:$tx-sw-1;
+    }
+
+    @media only screen and (max-width:$bp-7){
+      width: 100%;
+      text-align: justify;
+      font-size: 1.2rem;
+    }
+
+    
+  }
+
+  // &--about {
+   
+  // }
+
+  &--location,
+  &--story-1 {
+    margin-bottom: 4rem; 
+
+  }
+
+  &--location {
+    @media only screen and (max-width:$bp-3){
+      text-align: center;
+    }
+  }
+
+  &--story {
+
+    @media only screen and (max-width:$bp-3){
+      line-height: $line-height-2;
+      margin-bottom: 2.5rem;
+    }
+
+    &-2 {
+      color: $color-grey-light-2;
+    }
+    
+  }
+
+
+  &--features {
+    margin-bottom: 2rem;
+    line-height: $line-height-3;
+
+    @media only screen and (max-width:$bp-3){
+      text-align: right;
+    }
+    // &--1,
+    // &--2 {
+
+    // }
+  }
+
+  &--footer-box-2 {
+    color: $color-grey-light-1;
+    font-size: 1.8rem;
+    width: 80%;
+    text-align: center;
+
+    @media only screen and (max-width:$bp-7){
+      font-size: 1.4rem;
+    }
+  }
+}

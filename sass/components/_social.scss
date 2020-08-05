@@ -1,0 +1,21 @@
+.social {
+  &__top {
+    // width: 20rem;
+    // display: flex;
+    // justify-content: space-between;
+    
+    //moze  grid
+    grid-template-columns: repeat(5, min-content);
+    column-gap: 2rem;
+    @include grid-center-5; // display: grid; align-items: center;
+    justify-content: end;
+   
+      
+    &-icon {
+      height: 2rem;
+      width: 2rem;
+      @include hover-activ;
+     
+    }
+  }
+}

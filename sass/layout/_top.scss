@@ -1,0 +1,20 @@
+.top {
+  background-color: $color-grey-light-2;
+  grid-column: full-start / full-end;
+
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+
+  @include grid-center-5; //display: grid;align-items: center;
+  grid-template-columns: repeat(2, min-content);
+  justify-content: space-between;
+  padding: 0 2rem; /// ovoga puta radimo sa padding .. a sledeci pu za svaki element posebno margin za social posebno za headinh-1 
+
+  @media only screen and (max-width:$bp-6){
+    padding: 0 2rem;
+
+  }
+  
+  
+}

@@ -1,0 +1,39 @@
+.nav {
+  grid-column: full-start / full-end;
+  z-index: 2000;
+  
+  @include grid-center-5; // display: grid;align-items: center;
+  grid-template-columns: repeat(2, min-content);
+  justify-content: space-between;
+  background-color: $color-grey-light-1;
+  box-shadow: $bx-sw-1;
+
+  position: sticky;
+  top: -2px;
+  
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    column-gap: 1.4rem;
+    list-style: none;
+    padding-right: 2rem;
+   
+    
+  }
+
+  // &__item {
+    
+  // }
+
+  &__link {
+    font-size: 2rem;
+    text-decoration: none;
+    color: $color-green;
+    @include hov-under; 
+    
+    @media only screen and (max-width:$bp-7){
+      font-size: 1.7rem;
+    }
+  }
+}
